@@ -1,0 +1,13 @@
+{
+  "log_groups": [
+    {"name": "prod-app", "tags": {"tier": "prod"},
+     "logs": [
+       {"name": "checkout-service", "retention_days": 180, "log_type": "CUSTOM"},
+       {"name": "audit-trail", "retention_days": 180, "log_type": "SERVICE"}
+     ]},
+    {"name": "dev-scratch", "tags": {"tier": "dev"},
+     "logs": [
+       {"name": "debug-log", "retention_days": 30, "log_type": "CUSTOM"}
+     ]}
+  ]
+}
